@@ -24,6 +24,8 @@ export function preview(props: SliderPreviewProps): ReactNode {
         heightUnit: props.heightUnit
     });
 
+    console.log(3333, style);
+
     return (
         <Slider
             {...values}
