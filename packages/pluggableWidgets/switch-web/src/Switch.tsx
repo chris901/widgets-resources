@@ -33,6 +33,8 @@ export function Switch(props: SwitchContainerProps) {
         [editable, toggle]
     );
 
+    console.info(44444);
+
     return (
         <SwitchComponent
             onClick={onClick}
