@@ -3,7 +3,7 @@ name: Run cross-browser automated end-to-end tests weekly
 on:
   schedule:
     # At 03:00 on Tuesday.
-    - cron: '0 03 * * 2'
+    - cron: '0 12 * * 5'
 
 jobs:
     test:
