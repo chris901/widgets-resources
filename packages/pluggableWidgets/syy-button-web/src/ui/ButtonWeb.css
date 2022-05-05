@@ -1,0 +1,7 @@
+/*
+Place your custom CSS here
+*/
+
+.rating-icon+span{
+    margin-left: 8px;
+}
