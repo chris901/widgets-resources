@@ -45,7 +45,7 @@ jobs:
               with:
                   node-version-file: '.nvmrc'
             - name: "Installing dependencies"
-              run: npm install
+              run: npm i --legacy-peer-deps
             - name: "Linting code"
               run: npm run lint -- ${{ steps.variables.outputs.arg }}
             - name: "Running unit tests"

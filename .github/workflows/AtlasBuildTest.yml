@@ -34,7 +34,7 @@ jobs:
               with:
                   node-version-file: '.nvmrc'
             - name: "Installing dependencies"
-              run: npm install
+              run: npm i --legacy-peer-deps
             - name: "Running Atlas build"
               run: |
                   cd packages/theming/atlas
