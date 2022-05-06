@@ -16,13 +16,12 @@ export class preview extends Component<ButtonWebPreviewProps> {
             size,
             shape,
             type,
-            text,
-            class: propClass
+            text
         } = props;
         const shapeData = shape === "circle" ? "circle" : shape === "round" ? "round" : undefined;
         const textData = text.trim() === "" ? undefined : text;
         return (
-            <div className={propClass}>
+            <div>
                 <Button ghost={ghost} block={block} href={href} size={size} shape={shapeData} type={type}>
                     {textData}
                 </Button>
