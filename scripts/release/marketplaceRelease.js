@@ -46,7 +46,7 @@ async function uploadModuleToAppStore(pkgName, marketplaceId, version, minimumMX
 
 async function getGithubAssetUrl() {
     console.log("Retrieving informations from Github Tag");
-    const request = await fetch("GET", "https://api.github.com/repos/mendix/widgets-resources/releases?per_page=10");
+    const request = await fetch("GET", "https://api.github.com/repos/chris901/widgets-resources/releases?per_page=10");
     const data = (await request) ?? [];
     const releaseId = data.find(info => info.tag_name === process.env.TAG)?.id;
     if (!releaseId) {
