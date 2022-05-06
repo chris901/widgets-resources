@@ -3,16 +3,16 @@ import { Button, Popconfirm, Modal } from "antd";
 import { Icon } from "./components/Icon";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import { ButtonWebContainerProps } from "../typings/ButtonWebProps";
-import { checkPathPermission, executeAction } from "@mendix/piw-utils-internal";
+import { executeAction } from "@mendix/piw-utils-internal";
 import "./ui/ButtonWeb.css";
 
 const { confirm } = Modal;
 export default class ButtonWeb extends Component<ButtonWebContainerProps> {
     render(): ReactNode {
         const { props } = this;
-        if (!checkPathPermission(props.authPath)) {
-            return null;
-        }
+        // if (!checkPathPermission(props.authPath)) {
+        //     return null;
+        // }
         const {
             block,
             href,
