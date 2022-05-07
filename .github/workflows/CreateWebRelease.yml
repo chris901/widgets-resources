@@ -22,7 +22,7 @@ jobs:
               with:
                   node-version-file: '.nvmrc'
             - name: "Installing dependencies"
-              run: npm i --legacy-peer-deps
+              run: npm install
             - name: "Building ${{ github.event.inputs.widget-name }}"
               run: "npm run release -- --scope '${{ github.event.inputs.widget-name }}'"
             - name: "Creating ${{ github.event.inputs.widget-name }} widget release"
